@@ -1,0 +1,145 @@
+html,
+body {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 13rem 0;
+  padding-left: 16.5rem;
+  background-color: #121725;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header::before {
+  content: "";
+  height: 10.4rem;
+  width: 23.2rem;
+  position: absolute;
+  bottom: 7.8rem;
+  right: 0;
+  z-index: 2;
+  background-image: url(./assets/desktop/bg-pattern-dots.svg);
+}
+
+.header::after {
+  content: "";
+  height: 55rem;
+  width: 60%;
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(./assets/desktop/image-host.jpg);
+}
+
+.header__content {
+  width: 60%;
+  background-color: #121725;
+  z-index: 2;
+  padding: 8.8rem 0;
+  padding-right: 5.8rem;
+}
+
+.heading {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 5rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 6.2rem;
+}
+
+.heading span.heading__highlight {
+  color: #54e6af;
+}
+
+.paragraph {
+  color: #c2cbe5;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.header .paragraph {
+  margin-top: 2.4rem;
+}
+
+.header__logo {
+  position: absolute;
+  top: 5rem;
+  left: 16.5rem;
+  height: 5.6rem;
+  width: 13.5rem;
+}
+
+.header__form {
+  display: flex;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.header__email {
+  background: #2c344b;
+  border-radius: 2.8rem;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  padding-right: 30rem;
+  border: none;
+}
+
+.header__email:focus,
+.header__email:active {
+  outline: none;
+}
+
+.header__cta {
+  background-color: #54e6af;
+  color: #121725;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.9rem 3rem;
+  border: none;
+  border-radius: 2.8rem;
+  transform: translateX(calc(-100% - 0.5rem));
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header__cta:hover {
+  background-color: #b3ffe2;
+}
+
+.header__cta:active {
+  outline: none;
+}
+
+.header__companies {
+  margin-top: 6.4rem;
+  height: 2.8rem;
+}
+
+.header__company-img {
+  height: 100%;
+  opacity: 0.6;
+}
+
+.header__company-img:not(:last-child) {
+  margin-right: 4rem;
+}
